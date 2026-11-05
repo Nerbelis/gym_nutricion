@@ -25,6 +25,10 @@
     </style>
 </head>
 <body>
+    <!-- Botón de Retorno al Portafolio -->
+    <div style="background: #002e5d; padding: 12px 25px; text-align: left;">
+        <a href="https://portafolio.nercovalch.uk" style="color: #ffffff; text-decoration: none; font-weight: 500; font-family: Helvetica, Arial, sans-serif; font-size: 14px;">← Volver al Portafolio</a>
+    </div>
 
 <div class="hero-container">
     <h2>NercoFit</h2>
