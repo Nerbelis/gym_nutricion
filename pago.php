@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $url_aprobacion = "http://localhost/gym_nutricion/enfoque.php?id=" . $cliente_id;
 
-        $mensaje  = "NUEVO PAGO PENDIENTE DE VALIDACION - GlobalFit Index\n\n";
+        $mensaje  = "NUEVO PAGO PENDIENTE DE VALIDACION - NercoFit\n\n";
         $mensaje .= "Socio: " . htmlspecialchars($nombre, ENT_QUOTES, 'UTF-8') . " (" . $edad . " anos)\n";
         $mensaje .= "Metodo: Pago Movil (Banco de Venezuela)\n";
         $mensaje .= "Referencia: " . htmlspecialchars($referencia, ENT_QUOTES, 'UTF-8') . "\n";
