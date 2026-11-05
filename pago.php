@@ -29,8 +29,8 @@ cargarEntorno('.env');
 $host = 'localhost';
 $port = '3308';
 $db   = 'gym_nutricion_db';
-$user = 'root';
-$pass = '';
+$user = 'nerco_user';
+$pass = 'NercoSegura2026*';
 
 try {
     $pdo = new PDO("mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4", $user, $pass);
