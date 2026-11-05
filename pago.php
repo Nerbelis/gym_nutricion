@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $token   = $_ENV['TELEGRAM_BOT_TOKEN'] ?? getenv('TELEGRAM_BOT_TOKEN');
         $chat_id = $_ENV['TELEGRAM_CHAT_ID'] ?? getenv('TELEGRAM_CHAT_ID');
 
-        $url_aprobacion = "http://localhost/gym_nutricion/enfoque.php?id=" . $cliente_id;
+        $url_aprobacion = "https://gym.nercovalch.uk/enfoque.php?id=" . $cliente_id;
 
         $mensaje  = "NUEVO PAGO PENDIENTE DE VALIDACION - NercoFit\n\n";
         $mensaje .= "Socio: " . htmlspecialchars($nombre, ENT_QUOTES, 'UTF-8') . " (" . $edad . " anos)\n";
@@ -161,7 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="form-group">
                 <label>Monto exacto pagado (VES):</label>
-                <input type="number" step="0.01" name="monto_pago" required value="25.00">
+                <input type="number" step="0.01" name="monto_pago" required value="2000">
             </div>
 
             <button type="submit" name="enviar_pago">Reportar Pago y Solicitar Autorizacion</button>
