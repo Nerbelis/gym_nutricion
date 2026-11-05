@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>GlobalFit Index | Esperando Confirmacion de Pago</title>
+    <title>NercoFit | Esperando Confirmacion de Pago</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 20px; }
         .container { max-width: 600px; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin: auto; border: 1px solid #e2e8f0; }
@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 <div class="container">
-    <h2>GlobalFit Index</h2>
+    <h2>NercoFit</h2>
     <div class="sub-header">Modulo de Validacion de Pago Movil</div>
 
     <?php if (!$pago_enviado): ?>
@@ -142,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             • <strong>Banco:</strong> Banco de Venezuela (0102)<br>
             • <strong>Telefono:</strong> 0424-6163113<br>
             • <strong>Cedula:</strong> 11.282.487<br>
-            • <strong>Monto sugerido:</strong> 25.00 VES
+            • <strong>Monto sugerido:</strong> 2000.00 VES
         </div>
 
         <form method="POST">

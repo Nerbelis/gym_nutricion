@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['calcular_imc'])) {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>GlobalFit Index | Paso 1: Verificación de Eutrofia</title>
+    <title>NercoFit| Paso 1: Verificación de Eutrofia</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 20px; }
         .container { max-width: 600px; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin: auto; border: 1px solid #e2e8f0; }
@@ -58,18 +58,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['calcular_imc'])) {
 </head>
 <body>
 <div class="container">
-    <h2>GlobalFit Index</h2>
+    <h2>NercoFit</h2>
     <div class="sub-header">Paso 1: Verificación de Perfil Eutrófico (50+)</div>
 
     <?php if (!$calculado): ?>
         <form method="POST">
             <div class="form-group">
                 <label>Nombre del Socio / Usuario:</label>
-                <input type="text" name="nombre" required placeholder="Ej. Nerbelis Valdeblanque">
+                <input type="text" name="nombre" required placeholder="Ej. Maria Suarez">
             </div>
             <div class="form-group">
                 <label>Edad (años):</label>
-                <input type="number" name="edad" required placeholder="Ej. 53">
+                <input type="number" name="edad" required placeholder="Ej. 50">
             </div>
             <div class="form-group">
                 <label>Género:</label>

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>GlobalFit Index | Términos y Descargo de Responsabilidad</title>
+    <title>NercoFit| Términos y Descargo de Responsabilidad</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 20px; }
         .container { max-width: 700px; background: #ffffff; padding: 35px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin: auto; border: 1px solid #e2e8f0; line-height: 1.6; }
@@ -18,10 +18,10 @@
 <body>
 <div class="container">
     <h2>Términos, Condiciones y Marco Científico</h2>
-    <p style="text-align: center; font-size: 13px; color: #64748b;">GlobalFit Index — Sistema Automatizado de Referencia Antropométrica</p>
+    <p style="text-align: center; font-size: 13px; color: #64748b;">NercoFit — Sistema Automatizado de Referencia Antropométrica</p>
 
     <h3>1. Descargo de Responsabilidad Informativa</h3>
-    <p>Toda la información, diagnósticos estimativos (incluyendo el cálculo del índice de masa corporal, estado eutrófico, porcentaje de grasa corporal y gasto calórico diario), así como las pautas de fuerza y recomendaciones generadas por <strong>GlobalFit Index</strong>, tienen un <strong>carácter estrictamente informativo, educativo y de orientación en bienestar</strong>.</p>
+    <p>Toda la información, diagnósticos estimativos (incluyendo el cálculo del índice de masa corporal, estado eutrófico, porcentaje de grasa corporal y gasto calórico diario), así como las pautas de fuerza y recomendaciones generadas por <strong>NercoFit</strong>, tienen un <strong>carácter estrictamente informativo, educativo y de orientación en bienestar</strong>.</p>
     <p>Este software automatizado <strong>no constituye un diagnóstico médico, clínico ni nutricional formal</strong>, y de ninguna manera sustituye la consulta, evaluación o supervisión de un médico especialista o profesional de la salud calificado.</p>
 
     <h3>2. Basamento Metodológico y Científico (OMS y Organismos)</h3>

@@ -78,7 +78,7 @@ if (!$rutina_asignada) {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>GlobalFit Index | Reporte y Consulta</title>
+    <title>NercoFit| Reporte y Consulta</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 20px; }
         .container { max-width: 700px; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin: auto; border: 1px solid #e2e8f0; }
@@ -100,7 +100,7 @@ if (!$rutina_asignada) {
 </head>
 <body>
 <div class="container">
-    <h2>GlobalFit Index | Reporte y Consulta</h2>
+    <h2>NercoFit | Reporte y Consulta</h2>
 
     <div class="resultado-box">
         <h3>Diagnóstico Antropométrico para <?= htmlspecialchars($nombre, ENT_QUOTES, 'UTF-8') ?></h3>

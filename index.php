@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>GlobalFit Index | Panel Principal</title>
+    <title>NercoFit  | Panel Principal</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box; }
         .hero-container { max-width: 600px; width: 100%; background: #ffffff; padding: 35px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center; border: 1px solid #e2e8f0; }
@@ -27,7 +27,7 @@
 <body>
 
 <div class="hero-container">
-    <h2>GlobalFit Index</h2>
+    <h2>NercoFit</h2>
     
     <!-- El Gancho -->
     <div class="hero-gancho">
@@ -47,7 +47,7 @@
     <!-- Código QR General en el Dashboard para escaneo rápido -->
     <div class="qr-dashboard">
         <!-- Puedes cambiar la URL del data= por el enlace definitivo de tu web en la nube -->
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://shop.nercovalch.uk/fitbalance/" alt="QR Acceso GlobalFit Index">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://shop.nercovalch.uk/fitbalance/" alt="QR Acceso NercoFit">
         <p>📱 Escanea para acceso rápido en tu móvil</p>
     </div>
 

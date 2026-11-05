@@ -18,7 +18,7 @@ $monto_pago = $_POST['monto_pago'];
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>GlobalFit Index | Paso 3: Enfoque y Entrenador</title>
+    <title>NercoFit| Paso 3: Enfoque y Entrenador</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 20px; }
         .container { max-width: 600px; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin: auto; border: 1px solid #e2e8f0; }
@@ -34,7 +34,7 @@ $monto_pago = $_POST['monto_pago'];
 </head>
 <body>
 <div class="container">
-    <h2>GlobalFit Index</h2>
+    <h2>NercoFit</h2>
     <div class="sub-header">Paso 3: Enfoque, Actividad y Observaciones del Entrenador</div>
 
     <form action="resultado.php" method="POST">
