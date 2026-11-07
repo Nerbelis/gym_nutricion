@@ -24,13 +24,23 @@ function cargarEntorno($ruta) {
 
 // Cargamos el .env directamente
 cargarEntorno('.env');
+// Detección automática de entorno (Local vs Producción)
+if ($_SERVER['HTTP_HOST'] === 'localhost' || $_SERVER['HTTP_HOST'] === '127.0.0.1') {
+    // Credenciales para tu laptop (Local)
+    $host = 'localhost';
+    $port = '3308'; // Puerto por defecto local
+    $db = 'gym_nutricion_db';
+    $user = 'root'; // Usuario local por defecto
+    $pass = '';     // Sin contraseña en local
+} else {
+    // Credenciales para DigitalOcean (Producción)(Puerto 3308, Base de datos gym_nutricion_db)
+    $host = 'localhost';
+    $port = '3308';
+    $db = 'gym_nutricion_db';
+    $user = 'nerco_user';
+    $pass = 'NercoSegura2026*';
+}
 
-// Configuración de conexión segura (Puerto 3308, Base de datos gym_nutricion_db)
-$host = 'localhost';
-$port = '3308';
-$db   = 'gym_nutricion_db';
-$user = 'nerco_user';
-$pass = 'NercoSegura2026*';
 
 try {
     $pdo = new PDO("mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4", $user, $pass);
@@ -85,16 +95,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'text' => $mensaje
         ];
 
-        $ch = curl_init("https://api.telegram.org/bot" . $token . "/sendMessage");
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        
-        // Ejecución limpia del cURL sin frenar la página
-        curl_exec($ch);
-        curl_close($ch);
+       $ch = curl_init("https://api.telegram.org/bot" . trim($token) . "/sendMessage");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
-        $pago_enviado = true;
+$respuesta_telegram = curl_exec($ch);
+$error_curl = curl_error($ch);
+curl_close($ch);
+
+// Depuración temporal para ver si Telegram responde o hay error
+if ($error_curl) {
+    die("Error de cURL: " . $error_curl);
+}
+
+$resultado_json = json_decode($respuesta_telegram, true);
+if (!$resultado_json || !isset($resultado_json['ok']) || $resultado_json['ok'] !== true) {
+    die("Error devuelto por Telegram: " . $respuesta_telegram);
+}
+
+$pago_enviado = true;
     } else {
         $nombre = $_POST['nombre'] ?? '';
         $edad = $_POST['edad'] ?? '';

@@ -51,7 +51,7 @@
     <!-- Código QR General en el Dashboard para escaneo rápido -->
     <div class="qr-dashboard">
         <!-- Puedes cambiar la URL del data= por el enlace definitivo de tu web en la nube -->
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://shop.nercovalch.uk/fitbalance/" alt="QR Acceso NercoFit">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gym.nercovalch.uk/fitbalance/" alt="QR Acceso NercoFit">
         <p>📱 Escanea para acceso rápido en tu móvil</p>
     </div>
 
