@@ -23,7 +23,7 @@ function cargarEntorno($ruta) {
 }
 
 // Cargamos el .env directamente
-cargarEntorno('.env');
+cargarEntorno(_DIR_ . '/.env');
 // Detección automática de entorno (Local vs Producción)
 if ($_SERVER['HTTP_HOST'] === 'localhost' || $_SERVER['HTTP_HOST'] === '127.0.0.1') {
     // Credenciales para tu laptop (Local)
