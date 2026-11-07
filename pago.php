@@ -12,7 +12,9 @@ function cargarEntorno($ruta) {
         $partes = explode('=', $linea, 2);
         if (count($partes) === 2) {
             $nombre = trim($partes[0]);
-            $valor = trim($partes[1]);
+            // Limpiamos espacios y comillas dobles o simples que pueda tener el valor
+            $valor = trim(trim($partes[1]), "\"'");
+            
             if (!array_key_exists($nombre, $_SERVER) && !array_key_exists($nombre, $_ENV)) {
                 putenv($nombre . '=' . $valor);
                 $_ENV[$nombre] = $valor;
